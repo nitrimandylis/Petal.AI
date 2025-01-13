@@ -350,7 +350,7 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.white.opacity(0.8))
                             
-                            Text("Developed by [Your Name or Team]")
+                            Text("Developed by Nick Trimandylis")
                                 .font(.subheadline)
                                 .foregroundColor(.white.opacity(0.8))
                         }
