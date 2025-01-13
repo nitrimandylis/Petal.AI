@@ -1,4 +1,5 @@
 # Petal.AI
+
 ## Project Overview
 
 This project consists of two major components:
@@ -6,8 +7,6 @@ This project consists of two major components:
 1. **iPhone App**: Built using SwiftUI, this app serves as a personal learning coach interface that allows users to interact with an AI-powered tutor. The app provides a seamless and interactive user experience to teach and guide users through various subjects using conversational AI.
 
 2. **GPT-2 Fine-Tuning**: The backend is powered by a fine-tuned version of GPT-2, a state-of-the-art language model that has been customized specifically to function as a personal tutor. This model has been trained with a custom dataset that allows it to respond to users' questions, provide explanations, and engage in an intelligent conversation to aid in learning new skills from the Universal Toolbox.
-
-The app acts as a bridge between the user and the fine-tuned model, enabling an easy-to-use and intuitive interaction via natural language.
 
 ## Key Features
 
@@ -22,8 +21,6 @@ The app acts as a bridge between the user and the fine-tuned model, enabling an 
 - **Swift**: The primary programming language used to develop the app, providing a native experience on iPhone devices.
 - **SwiftUI**: Apple's declarative framework used to build the user interface with clean and scalable code.
 - **GPT-2**: A pre-trained language model that has been fine-tuned for the purpose of serving as a personal learning assistant.
-- **Core Data / UserDefaults**: For storing the user's progress, recent messages, and app state.
-- **Firebase**: Optionally, can be used for storing user data or handling chat logs for a more personalized experience.
 
 ### GPT-2 Fine-Tuning:
 - **Hugging Face Transformers**: A library used to fine-tune the GPT-2 model with a custom dataset of learning materials, ensuring the AI is capable of responding accurately to user queries.
