@@ -1,0 +1,3 @@
+[submodule "Petal.AI-finetuning"]
+	path = Petal.AI-finetuning
+	url = https://github.com/nitrimandylis/Petal.AI-finetuning.git
