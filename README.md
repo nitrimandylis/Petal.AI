@@ -2,67 +2,36 @@
 
 ## Project Overview
 
-This project consists of two major components:
+Petal.AI is an innovative iOS application designed to provide personalized learning experiences through AI-powered tutoring. This project is a simple demonstration with no goals of active development.
 
-1. **iPhone App**: Built using SwiftUI, this app serves as a personal learning coach interface that allows users to interact with an AI-powered tutor. The app provides a seamless and interactive user experience to teach and guide users through various subjects using conversational AI.
+### iOS App Components:
+- **Swift & SwiftUI**: Built using Swift 5.0 and SwiftUI for a native iOS experience.
+- **Minimum iOS Version**: iOS 17.0+
+- **Device Support**: iPhone (Portrait mode)
 
-2. **GPT-2 Fine-Tuning**: The backend is powered by a fine-tuned version of GPT-2, a state-of-the-art language model that has been customized specifically to function as a personal tutor. This model has been trained with a custom dataset that allows it to respond to users' questions, provide explanations, and engage in an intelligent conversation to aid in learning new skills from the Universal Toolbox.
+### Project Structure
+The project follows a modular architecture with the following key components:
 
-## Key Features
+- `Petal_AIApp.swift`: Main application entry point.
+- `ContentView.swift`: Primary user interface container.
+- `APIKey.swift`: Secure API key management.
+- `FeedbackManager.swift`: User feedback handling.
+- `StreakCardView.swift`: UI component for tracking learning progress.
+- `Theme.swift`: Application-wide styling definitions.
 
-- **Interactive Chat Interface**: The app includes a modern and user-friendly chat interface where users can send messages to the AI tutor and receive thoughtful responses.
-- **Weekly Streak Tracker**: The app keeps track of a user's learning progress through a weekly streak counter, motivating users to stay consistent.
-- **Recent Messages Preview**: Users can view their most recent interactions with the AI tutor.
-- **Reminders & Settings**: The app provides an option to set daily reminders to encourage consistent learning, along with various user-configurable settings.
+## Getting Started
 
-## Technologies Used
+To explore the project, clone the repository and open it in Xcode. Ensure you have the necessary dependencies and a valid API key configured in `Petal.AI/Petal.AI/GenerativeAI-Info.plist`.
 
-### iOS App:
-- **Swift**: The primary programming language used to develop the app, providing a native experience on iPhone devices.
-- **SwiftUI**: Apple's declarative framework used to build the user interface with clean and scalable code.
-- **GPT-2**: A pre-trained language model that has been fine-tuned for the purpose of serving as a personal learning assistant.
+## Contributing
 
-### GPT-2 Fine-Tuning:
-- **Hugging Face Transformers**: A library used to fine-tune the GPT-2 model with a custom dataset of learning materials, ensuring the AI is capable of responding accurately to user queries.
-- **Python**: The scripting language used to preprocess data and fine-tune GPT-2.
-- **PyTorch**: Framework used for fine-tuning the GPT-2 model.
-
----
-
-## TODOs:
-
-1. **Integrate the Model into the App**:
-   - Set up an API or local inference engine to integrate the fine-tuned GPT-2 model into the app.
-   - Create a backend service or use a local model for generating responses based on user queries.
-
-2. **Make the Streak and Recent Chats Functional**:
-   - Implement the streak tracker to correctly update based on user interactions.
-   - Make the recent chat feature work by saving the user's chat history and displaying it in the interface.
-
-3. **Work on Report/Feedback Functions**:
-   - Implement functionality for users to report issues within the app, and send feedback to improve the AI tutor experience.
-   - Allow users to submit reports and feedback, which will be handled appropriately (e.g., via email or API).
-
----
-
-## App Usage
-
-1. **Home Screen**: The Home tab provides an overview of your progress, with a weekly streak tracker and a recent chat preview.
-2. **Chat Screen**: The Chat tab is where you can interact with your personal AI tutor. You can ask questions, get explanations, and receive personalized learning support.
-3. **Settings Screen**: The Settings tab allows you to configure reminders, report issues, and send feedback.
-
----
+As this project is not actively developed, contributions are not currently being accepted. However, feel free to fork the repository and experiment on your own.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
 ## Acknowledgments
 
-- **Hugging Face** for the Transformers library, which made fine-tuning GPT-2 easy.
-- **Apple** for providing Swift and SwiftUI for building beautiful and performant iOS apps.
-- **OpenAI** for GPT-2, the powerful language model that powers this personal learning coach.
+- Thanks to the Swift and SwiftUI communities for their invaluable resources and support.
 
-For any questions or issues, feel free to open an issue or reach out to us directly via the repository!
