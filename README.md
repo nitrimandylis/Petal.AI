@@ -19,9 +19,16 @@ The project follows a modular architecture with the following key components:
 - `StreakCardView.swift`: UI component for tracking learning progress.
 - `Theme.swift`: Application-wide styling definitions.
 
+## Features
+
+- **Personalized Tutoring**: AI-driven tutoring sessions tailored to individual learning styles.
+- **Progress Tracking**: Visualize learning progress with interactive streak cards.
+- **User Feedback**: Collect and manage user feedback to improve the learning experience.
+- **Secure API Integration**: Manage API keys securely for accessing AI services.
+
 ## Getting Started
 
-To explore the project, clone the repository and open it in Xcode. Ensure you have the necessary dependencies and a valid API key configured in `Petal.AI/Petal.AI/GenerativeAI-Info.plist`.
+To explore the project, clone the repository and open it in Xcode. Ensure you have the necessary dependencies and a valid Gemini API key configured in `Petal.AI/Petal.AI/GenerativeAI-Info.plist`. And if not detected, add the the generative-ai-swift package for the Google Gemini API.
 
 ## Contributing
 
