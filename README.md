@@ -10,20 +10,26 @@ Petal.AI is an innovative iOS application designed to provide personalized learn
 - **Device Support**: iPhone (Portrait mode)
 
 ### Project Structure
-The project follows a modular architecture with the following key components:
+The project follows a modular architecture with the following components:
 
-- `Petal_AIApp.swift`: Main application entry point.
-- `ContentView.swift`: Primary user interface container.
-- `APIKey.swift`: Secure API key management.
-- `FeedbackManager.swift`: User feedback handling.
-- `StreakCardView.swift`: UI component for tracking learning progress.
-- `Theme.swift`: Application-wide styling definitions.
+#### iOS App Core Components
+```
+Petal.AI/
+├── Petal_AIApp.swift       # Main application entry point
+├── ContentView.swift       # Primary user interface container
+├── APIKey.swift           # Secure API key management
+├── FeedbackManager.swift   # User feedback handling
+├── StreakCardView.swift   # UI component for tracking learning progress
+└── Theme.swift            # Application-wide styling definitions
+```
+
 
 ## Features
 
 - **Personalized Tutoring**: AI-driven tutoring sessions tailored to individual learning styles.
 - **Progress Tracking**: Visualize learning progress with interactive streak cards.
 - **Secure API Integration**: Add your own API key for LLM integration
+
 ## Getting Started
 
 To explore the project, clone the repository and open it in Xcode. Ensure you have the necessary dependencies and a valid Gemini API key configured in `Petal.AI/Petal.AI/GenerativeAI-Info.plist`. And if not detected, add the the generative-ai-swift package for the Google Gemini API.
