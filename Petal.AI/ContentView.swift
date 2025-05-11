@@ -391,6 +391,43 @@ struct ContentView: View {
     }
 
     // MARK: Report Issue Sheet
+    struct ReportIssueSheet: View {
+        @Environment(\.presentationMode) var presentationMode
+        @State private var issueTitle = ""
+        @State private var issueDescription = ""
+        
+        var body: some View {
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Report an Issue")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.accentColor)
+                Text("Help us improve Petal.AI by reporting any issues you encounter.")
+                    .font(.callout)
+                    .foregroundColor(.white)
+                TextField("Issue Title", text: $issueTitle)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Describe the issue in detail", text: $issueDescription)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button(action: {
+                    // Submit the issue (could be extended to send to a server or email)
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("Submit Report")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Theme.accentColor)
+                        .cornerRadius(Theme.cornerRadius)
+                }
+            }
+            .padding()
+            .background(Theme.backgroundColor)
+            .cornerRadius(Theme.cornerRadius)
+            .padding()
+        }
+    }
     struct FeedbackSheet: View {
         @State private var title = ""
         @State private var description = ""
@@ -443,7 +480,7 @@ struct ContentView: View {
                 return
             }
             
-            FeedbackManager.shared.sendFeedback(title: title, description: description, from: rootViewController)
+            ReportManager.shared.sendReport(title: title, description: description, from: rootViewController)
         }
     }
 
